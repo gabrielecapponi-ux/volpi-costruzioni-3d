@@ -9,10 +9,41 @@
   <meta name="description" content="Volpi Costruzioni. Nuove costruzioni e ristrutturazioni a Parma e provincia. Esplora il cantiere in 3D e le fotografie dei lavori realizzati.">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon-M661meA5.svg">
   <link rel="preload" as="image" href="./assets/villa-CSGRMLP5.webp" fetchpriority="high">
-  <script type="module" crossorigin src="./assets/index-we3wFaXQ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Dwr7CuNM.css">
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const query = new URLSearchParams(location.search);
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches || query.get('motion') === 'reduce' || query.get('static') === '1') {
+        root.setAttribute('data-reduced',''); return;
+      }
+      root.classList.add('arriving');
+      // Keep the site reachable even when the main module cannot be fetched.
+      function release() {
+        root.classList.remove('arriving');
+        document.querySelector('#site-content')?.removeAttribute('inert');
+      }
+      window.addEventListener('volpi:enter', release, {once:true});
+      document.addEventListener('click', event => { if (event.target.closest('[data-entry-skip]')) release(); });
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') release(); });
+      setTimeout(() => {
+        if (root.classList.contains('arriving')) { window.dispatchEvent(new Event('volpi:skip')); release(); }
+      }, 13500);
+    })();
+  </script>
+  <script type="module" crossorigin src="./assets/index-DRdr6vmK.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-euom-b0-.css">
 </head>
 <body id="inizio">
+  <div id="arrival" class="arrival" role="dialog" aria-modal="true" aria-label="Introduzione, costruzione di una villa">
+    <div class="arrival-head"><div class="arrival-mark"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='212'%20height='49'%20viewBox='0%200%20212%2049'%20role='img'%20aria-labelledby='brand-title'%3e%3ctitle%20id='brand-title'%3eVolpi%20Costruzioni%3c/title%3e%3cpath%20fill='%23F14939'%20fill-rule='evenodd'%20d='%20M1.1%201.2%2023.9%209.7%2020.8%2011.1%2020.8%2029.5%2035.6%2015.1%2031.2%2012.0%2038.0%208.6%2047.7%2016.0%2041.8%2018.4%2013.3%2046.0%204.2%2046.0%204.2%205.1%201.1%203.8Z%20M8.3%2010.2V13.5L11.2%2014.5V11.2Z%20M13.3%2012.0V15.3L16.2%2016.3V13.0Z%20M8.3%2016.1V19.4L11.2%2020.4V17.1Z%20M13.3%2017.9V21.2L16.2%2022.2V18.9Z%20M8.3%2022.0V25.3L11.2%2026.3V23.0Z%20M13.3%2023.8V27.1L16.2%2028.1V24.8Z'/%3e%3cg%20fill='%23F8F6F1'%20fill-rule='evenodd'%3e%3cpath%20d='M58%204H65.5L75.8%2024.1%2086.2%204H93.6L79.4%2031.3H72.2Z'/%3e%3cpath%20d='M103.7%204H119.5L125.5%209.8V25.5L119.5%2031.3H100.2L94.2%2025.5V13.2ZM104.2%209.9%20100.9%2013.2V23.3L103.2%2025.5H116.7L118.8%2023.4V11.9L116.8%209.9Z'/%3e%3cpath%20d='M132.3%204H139.0V25.4H161.0L157.7%2031.3H132.3Z'/%3e%3cpath%20d='M165.5%204H189.0L195.0%209.7V18.4L189.2%2024.0H172.2V31.3H165.5ZM172.2%209.8V18.2H186.5L188.3%2016.5V11.7L186.3%209.8Z'/%3e%3cpath%20d='M203.3%204H210.0V31.3H203.3Z'/%3e%3c/g%3e%3cg%20fill='none'%20stroke='%23F8F6F1'%20stroke-width='1.32'%20stroke-linecap='square'%20stroke-linejoin='bevel'%20transform='translate(-9.7%20-10.4)%20scale(1.165%201.25)'%3e%3cpath%20d='M65.1%2038.7H60.3L58.8%2040.2V44.1L60.3%2045.6H65.1'/%3e%3cpath%20d='M72.6%2038.7H76.7L78.1%2040.1V44.2L76.7%2045.6H72.6L71.2%2044.2V40.1Z'/%3e%3cpath%20d='M91.1%2038.7H85.3L84.2%2039.9V40.9L85.3%2042.1H90.0L91.2%2043.3V44.5L90.0%2045.6H84.1'/%3e%3cpath%20d='M97.2%2038.7H104.5M100.8%2038.8V45.6'/%3e%3cpath%20d='M111.0%2045.6V38.7H116.4L117.6%2039.9V41.2L116.4%2042.4H111.2M114.7%2042.4L118.1%2045.6'/%3e%3cpath%20d='M124.5%2038.7V44.1L126.0%2045.6H129.8L131.3%2044.1V38.7'/%3e%3cpath%20d='M138.1%2038.7H145.1L138.4%2045.6H145.4'/%3e%3cpath%20d='M152.2%2038.7V45.6'/%3e%3cpath%20d='M160.6%2038.7H164.7L166.1%2040.1V44.2L164.7%2045.6H160.6L159.2%2044.2V40.1Z'/%3e%3cpath%20d='M173.1%2045.6V38.7L180.2%2045.6V38.7'/%3e%3cpath%20d='M187.6%2038.7V45.6'/%3e%3c/g%3e%3c/svg%3e" width="212" height="49" alt="Volpi Costruzioni"></div><button type="button" data-entry-skip>Salta introduzione <span aria-hidden="true">↗</span></button></div>
+    <div class="arrival-scene model-slot" aria-hidden="true"><img class="stage-plate" src="./villa/00.webp" alt="" fetchpriority="high"></div>
+    <div class="arrival-foot">
+      <div class="arrival-titles"><p class="entry-label">Costruzione della villa</p><p class="arrival-title" data-entry-title>Disegno su carta</p></div>
+      <div class="entry-counter" aria-hidden="true"><span data-entry-count>0</span><small>%</small></div>
+      <div class="entry-track" role="progressbar" aria-label="Avanzamento della costruzione" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div>
+    </div>
+  </div>
+  <div id="site-content">
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="masthead">
     <a class="mast-logo" href="#inizio" aria-label="Volpi Costruzioni, inizio"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='212'%20height='49'%20viewBox='0%200%20212%2049'%20role='img'%20aria-labelledby='brand-title'%3e%3ctitle%20id='brand-title'%3eVolpi%20Costruzioni%3c/title%3e%3cpath%20fill='%23F14939'%20fill-rule='evenodd'%20d='%20M1.1%201.2%2023.9%209.7%2020.8%2011.1%2020.8%2029.5%2035.6%2015.1%2031.2%2012.0%2038.0%208.6%2047.7%2016.0%2041.8%2018.4%2013.3%2046.0%204.2%2046.0%204.2%205.1%201.1%203.8Z%20M8.3%2010.2V13.5L11.2%2014.5V11.2Z%20M13.3%2012.0V15.3L16.2%2016.3V13.0Z%20M8.3%2016.1V19.4L11.2%2020.4V17.1Z%20M13.3%2017.9V21.2L16.2%2022.2V18.9Z%20M8.3%2022.0V25.3L11.2%2026.3V23.0Z%20M13.3%2023.8V27.1L16.2%2028.1V24.8Z'/%3e%3cg%20fill='%23F8F6F1'%20fill-rule='evenodd'%3e%3cpath%20d='M58%204H65.5L75.8%2024.1%2086.2%204H93.6L79.4%2031.3H72.2Z'/%3e%3cpath%20d='M103.7%204H119.5L125.5%209.8V25.5L119.5%2031.3H100.2L94.2%2025.5V13.2ZM104.2%209.9%20100.9%2013.2V23.3L103.2%2025.5H116.7L118.8%2023.4V11.9L116.8%209.9Z'/%3e%3cpath%20d='M132.3%204H139.0V25.4H161.0L157.7%2031.3H132.3Z'/%3e%3cpath%20d='M165.5%204H189.0L195.0%209.7V18.4L189.2%2024.0H172.2V31.3H165.5ZM172.2%209.8V18.2H186.5L188.3%2016.5V11.7L186.3%209.8Z'/%3e%3cpath%20d='M203.3%204H210.0V31.3H203.3Z'/%3e%3c/g%3e%3cg%20fill='none'%20stroke='%23F8F6F1'%20stroke-width='1.32'%20stroke-linecap='square'%20stroke-linejoin='bevel'%20transform='translate(-9.7%20-10.4)%20scale(1.165%201.25)'%3e%3cpath%20d='M65.1%2038.7H60.3L58.8%2040.2V44.1L60.3%2045.6H65.1'/%3e%3cpath%20d='M72.6%2038.7H76.7L78.1%2040.1V44.2L76.7%2045.6H72.6L71.2%2044.2V40.1Z'/%3e%3cpath%20d='M91.1%2038.7H85.3L84.2%2039.9V40.9L85.3%2042.1H90.0L91.2%2043.3V44.5L90.0%2045.6H84.1'/%3e%3cpath%20d='M97.2%2038.7H104.5M100.8%2038.8V45.6'/%3e%3cpath%20d='M111.0%2045.6V38.7H116.4L117.6%2039.9V41.2L116.4%2042.4H111.2M114.7%2042.4L118.1%2045.6'/%3e%3cpath%20d='M124.5%2038.7V44.1L126.0%2045.6H129.8L131.3%2044.1V38.7'/%3e%3cpath%20d='M138.1%2038.7H145.1L138.4%2045.6H145.4'/%3e%3cpath%20d='M152.2%2038.7V45.6'/%3e%3cpath%20d='M160.6%2038.7H164.7L166.1%2040.1V44.2L164.7%2045.6H160.6L159.2%2044.2V40.1Z'/%3e%3cpath%20d='M173.1%2045.6V38.7L180.2%2045.6V38.7'/%3e%3cpath%20d='M187.6%2038.7V45.6'/%3e%3c/g%3e%3c/svg%3e" width="212" height="49" alt="Volpi Costruzioni"></a>
@@ -34,7 +65,7 @@
           <p class="location"><span aria-hidden="true"></span> Impresa edile · Parma</p>
           <h1 id="cover-title">Dal progetto<br>alla casa<span>.</span></h1>
           <p class="cover-summary">Costruiamo e ristrutturiamo a Parma e provincia, da oltre quarant’anni.</p>
-          <a class="film-link" href="#cantiere"><span class="play-round" aria-hidden="true">▶</span> Esplora il cantiere 3D</a>
+          <a class="film-link" href="#cantiere"><span class="play-round" aria-hidden="true">↓</span> Esplora il cantiere 3D</a>
         </div>
         <div class="cover-bottom">
           <a class="cover-down" href="#lavori"><span aria-hidden="true">↓</span> Realizzazioni</a>
@@ -49,37 +80,20 @@
       </div>
     </section>
 
-    <section id="cantiere" class="film-section" aria-labelledby="film-title">
-      <div class="wrap film-layout">
-        <div class="film-intro">
-          <p class="rubric">La costruzione in 3D</p>
-          <h2 id="film-title">Dentro il <br>cantiere<span>.</span></h2>
-          <p class="film-description">Dal tracciato a terra all’ultimo serramento. Esplora la costruzione di una villa in cinque fasi.</p>
-          <div class="chapter-list" aria-label="Fasi di costruzione" role="group" hidden>
-            <button type="button" data-phase="0"><span>01</span>Disegno</button>
-            <button type="button" data-phase="1"><span>02</span>Fondazioni</button>
-            <button type="button" data-phase="2"><span>03</span>Ossatura</button>
-            <button type="button" data-phase="3"><span>04</span>Involucro</button>
-            <button type="button" data-phase="4"><span>05</span>Finiture</button>
-          </div>
+    <section id="cantiere" class="construction" aria-labelledby="build-title">
+      <div class="build-sticky">
+        <div class="build-top">
+          <h2 id="build-title">Dentro il cantiere<span>.</span></h2>
+          <p class="build-gesture"><span aria-hidden="true">↓</span> Scorri per costruire</p>
         </div>
-        <figure class="film-figure">
-          <div class="film-view">
-            <video id="construction-film" width="1280" height="720" muted playsinline preload="none" poster="./cinema/fase-1.jpg" aria-label="Film 3D illustrativo della costruzione di una villa"></video>
-            <img class="film-still" src="./cinema/fase-1.jpg" loading="lazy" width="1280" height="720" alt="Il tracciato della pianta, modello 3D illustrativo">
-          </div>
-          <div class="transport" hidden>
-            <button class="transport-play" type="button" aria-label="Riproduci il film"><span aria-hidden="true">▶</span></button>
-            <span class="transport-time" aria-hidden="true">0:00</span>
-            <input class="film-scrub" type="range" min="0" max="1000" step="1" value="0" aria-label="Posizione nel film">
-            <button class="transport-expand" type="button" aria-label="Visualizza il film a schermo intero"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9V3h6m6 0h6v6m0 6v6h-6m-6 0H3v-6"/></svg></button>
-          </div>
-          <figcaption><span class="phase-caption">Il tracciato della pianta</span><span>Modello 3D illustrativo</span></figcaption>
-          <noscript><a class="inline-link" href="./cinema/cantiere.mp4">Guarda il film di costruzione ↗</a></noscript>
-        </figure>
+        <div class="build-scene model-slot" aria-hidden="true"><img class="stage-plate" src="./villa/06.webp" loading="lazy" alt=""></div>
+        <div class="build-narration"><p class="build-kicker"><span data-build-number>07</span> / 07</p><h3 data-build-name>Accensione</h3><p data-build-description>La luce passa attraverso le vetrate e risale dal fondo della piscina.</p></div>
+        <div class="build-bottom">
+          <div class="build-ruler" role="group" aria-label="Scegli una fase della costruzione" hidden></div>
+          <div class="build-meta"><span>Villa con piscina · Studio 3D illustrativo</span><a href="#lavori">Alle realizzazioni <span aria-hidden="true">↓</span></a></div>
+        </div>
       </div>
     </section>
-
     <section id="lavori" aria-label="Realizzazioni Volpi">
       <noscript><div class="wrap fallback-gallery"><h2>Realizzazioni</h2><figure><img src="./assets/villetta-Cx43U4mQ.jpg" alt="Villetta con portico"><figcaption>Edilizia residenziale</figcaption></figure><figure><img src="./assets/piscina-CP25m2Kt.jpg" alt="Piscina all’aperto"><figcaption>Piscina</figcaption></figure><figure><img src="./assets/scala-Dqw9OBLn.jpg" alt="Scala rivestita in pietra"><figcaption>Scala in pietra</figcaption></figure></div></noscript>
     </section>
@@ -87,7 +101,7 @@
       <div class="wrap company-grid">
         <div class="company-intro"><p class="rubric">Volpi Costruzioni</p><h2 id="company-title">Costruttori,<br>a Parma<span>.</span></h2></div>
         <div class="company-copy"><p>Da oltre quarant’anni seguiamo case, luoghi di lavoro e ristrutturazioni a Parma e provincia.</p><p>Nel chiavi in mano coordiniamo maestranze, materiali e lavorazioni. Dal primo sopralluogo alla consegna hai un unico interlocutore.</p></div>
-        <figure class="company-photo"><img src="./assets/facciata-CbDA22na.jpg" width="1600" height="1067" loading="lazy" alt="La facciata di una residenza con portico in pietra e tetto in coppi"><figcaption>Edilizia residenziale <span>Fotografia Volpi</span></figcaption></figure>
+        <figure class="company-photo"><div class="facade-comparison"><img src="./assets/facciata-CbDA22na.jpg" width="1600" height="1067" loading="lazy" alt="La facciata di una residenza con portico in pietra e tetto in coppi"><img class="facade-drawing" src="./assets/facciata-studio-BN6tVWL1.webp" loading="lazy" width="1152" height="768" alt=""></div><figcaption>Il portico in pietra <span>Studio a grafite e fotografia Volpi</span></figcaption></figure>
         <div class="scope" id="servizi"><h3>Competenze</h3>
           <details name="competenze" open><summary>Nuove costruzioni</summary><p>Case, ville e condomini. Seguiamo le lavorazioni dal tracciamento dell’edificio alla posa delle finiture.</p></details>
           <details name="competenze"><summary>Ristrutturazioni</summary><p>Rinnoviamo case, appartamenti, bagni e cucine, coordinando opere murarie, impianti e finiture.</p></details>
@@ -98,6 +112,7 @@
         </div>
       </div>
     </section>
+    <section id="percorso" aria-label="Dall’incontro alla consegna della casa"><noscript><div class="wrap fallback-gallery"><h2>Dall’incontro alla consegna</h2><p>Ci incontriamo in studio, definiamo il progetto e apriamo il cantiere. Seguiamo i lavori fino al giorno in cui entri nella tua casa.</p></div></noscript></section>
     <section class="contact" id="contatti" aria-labelledby="contact-title"><div class="wrap contact-layout">
       <div><p class="rubric">Contatti</p><h2 id="contact-title">Parliamo del<br>tuo progetto<span>.</span></h2></div>
       <div class="contact-panel"><a class="contact-phone" href="tel:+393356342478">+39 335 6342478 <span aria-hidden="true">↗</span></a><a class="contact-mail" href="mailto:info@volpicostruzioni.it">info@volpicostruzioni.it <span aria-hidden="true">↗</span></a><a class="contact-wa" href="https://wa.me/393356342478" target="_blank" rel="noopener noreferrer">Scrivici su WhatsApp <span aria-hidden="true">↗</span></a></div>
@@ -110,5 +125,6 @@
     <div><a href="tel:+393471120984">+39 347 1120984</a><br><a href="https://www.instagram.com/volpi_costruzioni_parma/" target="_blank" rel="noopener noreferrer">Instagram ↗</a> · <a href="https://www.facebook.com/volpicostruzioni/" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div>
     <div class="foot-end">© Volpi Costruzioni · P. IVA 02835240348 <a href="#inizio">Torna su ↑</a></div>
   </footer>
+  </div>
 </body>
 </html>
