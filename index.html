@@ -23,6 +23,9 @@
         document.querySelector('#site-content')?.removeAttribute('inert');
       }
       window.addEventListener('volpi:enter', release, {once:true});
+      window.addEventListener('error', event => {
+        if (event.target?.tagName === 'SCRIPT' && event.target.type === 'module') release();
+      }, true);
       document.addEventListener('click', event => { if (event.target.closest('[data-entry-skip], [data-entry-work]')) release(); });
       document.addEventListener('keydown', event => { if (event.key === 'Escape') release(); });
       setTimeout(() => {
@@ -30,8 +33,8 @@
       }, 13500);
     })();
   </script>
-  <script type="module" crossorigin src="./assets/index-DEknpcyg.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DgH2e8Vw.css">
+  <script type="module" crossorigin src="./assets/index-COUB0b4r.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-P6gA-Y_e.css">
 </head>
 <body id="inizio">
 <div id="arrival" class="arrival arrival-atrium" role="dialog" aria-modal="true" aria-labelledby="arrival-heading" data-entry-act="disegno">
@@ -115,7 +118,7 @@
           <h2 id="build-title">Dentro il cantiere<span>.</span></h2>
           <p class="build-gesture"><span aria-hidden="true">↓</span> Scorri per costruire</p>
         </div>
-        <div class="build-scene model-slot" aria-hidden="true"><img class="stage-plate" alt=""><noscript><img class="stage-plate" src="./villa/06.webp" loading="lazy" alt=""></noscript></div>
+        <div class="build-scene model-slot" aria-hidden="true"><img class="stage-plate" src="./villa/06.webp" width="1120" height="800" loading="lazy" alt=""></div>
         <div class="build-narration"><p class="build-kicker"><span data-build-number>07</span> / 07</p><h3 data-build-name>Accensione</h3><p data-build-description>La luce passa attraverso le vetrate e risale dal fondo della piscina.</p></div>
         <div class="build-bottom">
           <div class="build-ruler" role="group" aria-label="Scegli una fase della costruzione" hidden></div>
@@ -124,13 +127,34 @@
       </div>
     </section>
     <section id="lavori" tabindex="-1" aria-label="Realizzazioni Volpi">
-      <noscript><div class="wrap fallback-gallery"><h2>Sei realizzazioni Volpi</h2><figure><img src="./assets/villetta-Cx43U4mQ.jpg" loading="lazy" alt="Villetta con portico"><figcaption>Villetta con portico</figcaption></figure><figure><img src="./assets/scala-Dqw9OBLn.jpg" loading="lazy" alt="Scala in sasso"><figcaption>Scala in sasso</figcaption></figure><figure><img src="./assets/tetto-CkXsdbdD.jpg" loading="lazy" alt="Copertura in legno"><figcaption>Copertura in legno</figcaption></figure><figure><img src="./assets/piscina-CP25m2Kt.jpg" loading="lazy" alt="Piscina"><figcaption>Piscina</figcaption></figure><figure><img src="./assets/tennis-BHF5Jg_r.jpg" loading="lazy" alt="Campo da tennis"><figcaption>Campo da tennis</figcaption></figure><figure><img src="./assets/industriale-BBHI7WPK.jpg" loading="lazy" alt="Edificio industriale"><figcaption>Edificio industriale</figcaption></figure></div></noscript>
+      <div class="wrap documentary-fallback">
+    <div class="documentary-heading"><p class="rubric">Dall’archivio Volpi</p><h2>Sei realizzazioni,<br>da guardare da vicino<span>.</span></h2><p>Case, interni, spazi all’aperto e luoghi di lavoro. Fotografie delle realizzazioni Volpi.</p></div>
+    <div class="documentary-grid"><article data-documentary-project="villetta">
+      <a class="documentary-photo" href="./assets/villetta-Cx43U4mQ.jpg" aria-label="Apri la fotografia: Villetta con giardino"><img src="./assets/villetta-photo-480-DhjEaovY.webp" srcset="./assets/villetta-photo-480-DhjEaovY.webp 480w, ./assets/villetta-photo-960-BUQtn4Tt.webp 960w" sizes="(max-width:660px) 94vw, (min-width:1720px) 920px, 53vw" width="960" height="636" loading="lazy" fetchpriority="low" decoding="async" alt="La villetta vista dal giardino, con fiori in primo piano e grandi sporti di copertura."></a>
+      <p class="documentary-index">01 / Case</p><h3>Villetta con giardino</h3><p>Il telaio scuro del portico incornicia il giardino. Sopra, lo sporto della falda lascia in vista le teste dei travetti.</p><a class="documentary-contact" href="#contatti">Parliamo della tua casa <span aria-hidden="true">↗</span></a>
+    </article><article data-documentary-project="piscina">
+      <a class="documentary-photo" href="./assets/piscina-CP25m2Kt.jpg" aria-label="Apri la fotografia: Villa con piscina"><img src="./assets/piscina-photo-480-D6-wgkcj.webp" srcset="./assets/piscina-photo-480-D6-wgkcj.webp 480w, ./assets/piscina-photo-960-DSSInGe8.webp 960w" sizes="(max-width:660px) 94vw, (min-width:1720px) 920px, 53vw" width="1600" height="1067" loading="lazy" fetchpriority="low" decoding="async" alt="Una piscina rettangolare si estende davanti al portico in pietra della villa."></a>
+      <p class="documentary-index">02 / Esterni e sport</p><h3>Villa con piscina</h3><p>Una fascia chiara separa l’acqua dal prato. Il bordo cambia direzione sul lato verso la casa, in asse con il portico della villa.</p><a class="documentary-contact" href="#contatti">Parliamo della tua piscina <span aria-hidden="true">↗</span></a>
+    </article><article data-documentary-project="scala">
+      <a class="documentary-photo" href="./assets/scala-Dqw9OBLn.jpg" aria-label="Apri la fotografia: Scala e parete in sasso"><img src="./assets/scala-photo-480-DxiuBKu1.webp" srcset="./assets/scala-photo-480-DxiuBKu1.webp 480w, ./assets/scala-photo-960-DPgce7PA.webp 960w" sizes="(max-width:660px) 94vw, (min-width:1720px) 920px, 53vw" width="1600" height="1067" loading="lazy" fetchpriority="low" decoding="async" alt="Una rampa di scale sale lungo una parete in sasso verso una finestra alta."></a>
+      <p class="documentary-index">03 / Interni e coperture</p><h3>Scala e parete in sasso</h3><p>I bordi scuri delle pedate scandiscono le alzate bianche. La rampa segue la trama irregolare del muro in sasso fino al pianerottolo.</p><a class="documentary-contact" href="#contatti">Parliamo della tua scala <span aria-hidden="true">↗</span></a>
+    </article><article data-documentary-project="tetto">
+      <a class="documentary-photo" href="./assets/tetto-CkXsdbdD.jpg" aria-label="Apri la fotografia: Travi a vista"><img src="./assets/tetto-photo-480-nM0Fm9lu.webp" srcset="./assets/tetto-photo-480-nM0Fm9lu.webp 480w, ./assets/tetto-photo-800-BBCE8dmH.webp 800w" sizes="(max-width:660px) 94vw, (min-width:1720px) 920px, 53vw" width="800" height="600" loading="lazy" fetchpriority="low" decoding="async" alt="Travi di legno scuro scandiscono le due falde del soffitto."></a>
+      <p class="documentary-index">04 / Interni e coperture</p><h3>Travi a vista</h3><p>Le travi in legno disegnano le due falde. Il colore chiaro degli appoggi mette in evidenza il punto in cui ogni trave vi si innesta.</p><a class="documentary-contact" href="#contatti">Parliamo della tua copertura <span aria-hidden="true">↗</span></a>
+    </article><article data-documentary-project="industriale">
+      <a class="documentary-photo" href="./assets/industriale-BBHI7WPK.jpg" aria-label="Apri la fotografia: Edificio industriale"><img src="./assets/industriale-photo-480-PoRpkJPR.webp" srcset="./assets/industriale-photo-480-PoRpkJPR.webp 480w, ./assets/industriale-photo-800-ZIy7QUlA.webp 800w" sizes="(max-width:660px) 94vw, (min-width:1720px) 920px, 53vw" width="800" height="600" loading="lazy" fetchpriority="low" decoding="async" alt="Il piazzale di accesso conduce al fronte vetrato di un edificio industriale."></a>
+      <p class="documentary-index">05 / Industriale</p><h3>Edificio industriale</h3><p>I montanti suddividono le due grandi vetrate in campate regolari. Al centro, il tratto pieno della facciata si allinea alla strada di accesso.</p><a class="documentary-contact" href="#contatti">Parliamo del tuo edificio <span aria-hidden="true">↗</span></a>
+    </article><article data-documentary-project="tennis">
+      <a class="documentary-photo" href="./assets/tennis-BHF5Jg_r.jpg" aria-label="Apri la fotografia: Campo da tennis"><img src="./assets/tennis-photo-480-D8qOqx0C.webp" srcset="./assets/tennis-photo-480-D8qOqx0C.webp 480w, ./assets/tennis-photo-960-BBSFRgNA.webp 960w" sizes="(max-width:660px) 94vw, (min-width:1720px) 920px, 53vw" width="1024" height="768" loading="lazy" fetchpriority="low" decoding="async" alt="Il campo da tennis verde con linee bianche, recinzione e abitazione sullo sfondo."></a>
+      <p class="documentary-index">06 / Esterni e sport</p><h3>Campo da tennis</h3><p>Le linee bianche delimitano il rettangolo di gioco. Oltre la fascia verde perimetrale si leggono i montanti della recinzione e i pali di illuminazione.</p><a class="documentary-contact" href="#contatti">Parliamo del tuo campo <span aria-hidden="true">↗</span></a>
+    </article></div>
+  </div>
     </section>
     <section class="company" id="impresa" aria-labelledby="company-title">
       <div class="wrap company-grid">
         <div class="company-intro"><p class="rubric">Volpi Costruzioni</p><h2 id="company-title">Costruttori,<br>a Parma<span>.</span></h2></div>
         <div class="company-copy"><p>Da oltre quarant’anni seguiamo case, luoghi di lavoro e ristrutturazioni a Parma e provincia.</p><p>Nel chiavi in mano coordiniamo maestranze, materiali e lavorazioni. Dal primo sopralluogo alla consegna hai un unico interlocutore.</p></div>
-        <figure class="company-photo"><div class="facade-comparison"><template><img src="./assets/portico-foto-600-BulOtXM-.webp" srcset="./assets/portico-foto-600-BulOtXM-.webp 600w, ./assets/portico-foto-1000-Cq-Z-Fdx.webp 1000w" sizes="(max-width:760px) 90vw, 45vw" width="1000" height="667" decoding="async" alt="La facciata di una residenza con portico in pietra e tetto in coppi"></template><noscript><img src="./assets/portico-foto-600-BulOtXM-.webp" srcset="./assets/portico-foto-600-BulOtXM-.webp 600w, ./assets/portico-foto-1000-Cq-Z-Fdx.webp 1000w" sizes="(max-width:760px) 90vw, 45vw" width="1000" height="667" decoding="async" alt="La facciata di una residenza con portico in pietra e tetto in coppi"></noscript></div><figcaption>Il portico in pietra <span>Fotografia dall’archivio Volpi</span></figcaption></figure>
+        <figure class="company-photo"><div class="facade-comparison"><img src="./assets/portico-foto-600-BulOtXM-.webp" srcset="./assets/portico-foto-600-BulOtXM-.webp 600w, ./assets/portico-foto-1000-Cq-Z-Fdx.webp 1000w" sizes="(max-width:760px) 90vw, 45vw" width="1000" height="667" loading="lazy" decoding="async" alt="La facciata di una residenza con portico in pietra e tetto in coppi"></div><figcaption>Il portico in pietra <span>Fotografia dall’archivio Volpi</span></figcaption></figure>
         <div class="scope" id="servizi"><h3>Competenze</h3>
           <details name="competenze" open><summary>Nuove costruzioni</summary><p>Case, ville e condomini. Seguiamo le lavorazioni dal tracciamento dell’edificio alla posa delle finiture.</p></details>
           <details name="competenze"><summary>Ristrutturazioni</summary><p>Rinnoviamo case, appartamenti, bagni e cucine, coordinando opere murarie, impianti e finiture.</p></details>
@@ -141,7 +165,7 @@
         </div>
       </div>
     </section>
-    <section id="percorso" aria-label="Dall’incontro alla consegna della casa"><noscript><div class="wrap fallback-gallery"><h2>Dall’incontro alla consegna</h2><p>Ci incontriamo in studio, definiamo il progetto e apriamo il cantiere. Seguiamo i lavori fino al giorno in cui entri nella tua casa.</p></div></noscript></section>
+    <section id="percorso" aria-label="Dall’incontro alla consegna della casa"><div class="wrap documentary-method"><h2>Dall’incontro alla consegna</h2><p>Ci incontriamo in studio, definiamo il progetto e apriamo il cantiere. Seguiamo i lavori fino al giorno in cui entri nella tua casa.</p></div></section>
     <section class="contact" id="contatti" aria-labelledby="contact-title"><div class="wrap contact-layout">
       <div><p class="rubric">Contatti</p><h2 id="contact-title">Parliamo del<br>tuo progetto<span>.</span></h2></div>
       <div class="contact-panel"><a class="contact-phone" href="tel:+393356342478">+39 335 6342478 <span aria-hidden="true">↗</span></a><a class="contact-mail" href="mailto:info@volpicostruzioni.it">info@volpicostruzioni.it <span aria-hidden="true">↗</span></a><a class="contact-wa" href="https://wa.me/393356342478" target="_blank" rel="noopener noreferrer">Scrivici su WhatsApp <span aria-hidden="true">↗</span></a></div>
