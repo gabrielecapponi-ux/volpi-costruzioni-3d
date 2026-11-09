@@ -1,5 +1,7 @@
-# [Apri il sito di Volpi Costruzioni ↗](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/)
+# [Apri Volpi Costruzioni ↗](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/)
 
-[Guarda le sei realizzazioni](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/#lavori) · [Piscina e campo da tennis](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/?categoria=esterni-e-sport#lavori)
+[Sei realizzazioni con studi 3D](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/#lavori) · [Piscina e campo da tennis](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/?categoria=esterni-e-sport#lavori) · [Dall’incontro alle chiavi](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/#percorso).
 
-Viste verificate: [copertina desktop a 1440 px](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/desktop.jpg) · [confronto della piscina su telefono a 390 px](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/telefono-piscina.jpg).
+Viste verificate: [Portfolio desktop](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/portfolio-desktop.jpg) · [Portfolio telefono](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/portfolio-telefono.jpg) · [Il metodo Volpi](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/metodo-desktop.png).
+
+Sito illustrativo con fotografie dell’archivio Volpi; i modellini sono studi architettonici. Il codice sorgente è conservato in un repository privato dell’utente, distinto da questa distribuzione.
