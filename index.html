@@ -11,11 +11,33 @@
   <script>
     (() => {
       const root = document.documentElement;
+      // Every document visit begins at the entrance, even from an old gallery
+      // link or a reload while a project is open. In-page history stays intact.
+      const start = new URL(location.href);
+      start.hash = '';
+      start.searchParams.delete('categoria');
+      const { volpiWork, ...rest } = history.state || {};
+      history.replaceState(Object.keys(rest).length ? rest : null, '', start);
+      history.scrollRestoration = 'manual';
+      window.scrollTo({ top:0, left:0, behavior:'instant' });
+      let opened = false;
+      const restoreScroll = () => { history.scrollRestoration = 'auto'; };
+      window.addEventListener('volpi:enter', () => {
+        if (root.classList.contains('arriving')) window.scrollTo({ top:0, left:0, behavior:'instant' });
+        opened = true;
+        if (document.readyState === 'complete') setTimeout(restoreScroll, 0);
+      }, {once:true});
+      window.addEventListener('pageshow', event => {
+        // A cached document retains completed animation closures. Recreate it
+        // only on a real return from another page, never on tab or dialog changes.
+        if (event.persisted) { location.reload(); return; }
+        if (!opened) window.scrollTo({ top:0, left:0, behavior:'instant' });
+        if (opened) setTimeout(restoreScroll, 0);
+      });
       const query = new URLSearchParams(location.search);
       if (matchMedia('(prefers-reduced-motion: reduce)').matches || query.get('motion') === 'reduce' || query.get('static') === '1') {
         root.setAttribute('data-reduced',''); return;
       }
-      if (location.hash === '#lavori' || query.has('categoria')) return;
       root.classList.add('arriving');
       // Keep the site reachable even when the main module cannot be fetched.
       function release() {
@@ -33,7 +55,7 @@
       }, 13500);
     })();
   </script>
-  <script type="module" crossorigin src="./assets/index-BvEk8rNq.js"></script>
+  <script type="module" crossorigin src="./assets/index-2eIfESLv.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-P6gA-Y_e.css">
 </head>
 <body id="inizio">
