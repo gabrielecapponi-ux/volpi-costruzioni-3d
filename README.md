@@ -8,4 +8,6 @@ Nuovo ingresso «Dall’idea, alla luce»: caricamento da 0 a 99, costruzione de
 
 Sito illustrativo con fotografie dell’archivio Volpi; i modellini sono studi architettonici. Il codice sorgente è conservato in un repository privato dell’utente, distinto da questa distribuzione.
 
+Sei nuovi modelli creati in Blender: piscina incassata, residenza con portico, scala in pietra, copertura in sezione, edificio industriale e tennis. Componenti separati e costruzione reversibile allo scroll. [Confronto prima/dopo](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/modelli-prima-dopo.jpg) · [Viste dei sei modelli](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/modelli-blender.jpg).
+
 Rifinitura premium: materiali della villa alla scala dei pezzi, acqua filtrata, avvio asincrono della scena e portfolio con recupero delle immagini. [Desktop](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/premium-desktop.jpg) · [Confronto piscina su telefono](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/premium-telefono.png) · [Villa prima/dopo](https://gabrielecapponi-ux.github.io/volpi-costruzioni-3d/viste/villa-prima-dopo.jpg). Verifiche con viewport desktop/mobile emulati; nessuna prova su telefono fisico.
